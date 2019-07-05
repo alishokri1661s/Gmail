@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #EEEEEE;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <TextField fx:id="username" layoutX="126.0" layoutY="206.0" promptText="username" />
+      <PasswordField fx:id="password" layoutX="126.0" layoutY="260.0" promptText="password" />
+      <Button layoutX="179.0" layoutY="328.0" mnemonicParsing="false" onAction="#login" text="login" />
+      <Button layoutX="174.0" layoutY="395.0" mnemonicParsing="false" onAction="#signup" prefHeight="25.0" prefWidth="59.0" text="signup" />
+      <Pane fx:id="PaneConnect" layoutX="62.0" layoutY="105.0" prefHeight="414.0" prefWidth="276.0" style="-fx-background-color: #EEEEEE;">
+         <children>
+            <TextField fx:id="IpAddress" layoutX="62.0" layoutY="126.0" promptText="IP Address" />
+            <Button layoutX="106.0" layoutY="259.0" mnemonicParsing="false" onAction="#connect" text="connect" />
+            <Label fx:id="error" layoutX="84.0" layoutY="169.0" text="Unable to connect" visible="false" />
+         </children>
+      </Pane>
+   </children>
+</Pane>
