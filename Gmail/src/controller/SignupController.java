@@ -4,23 +4,27 @@ import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-import javafx.scene.input.ContextMenuEvent;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
+import javafx.scene.shape.Circle;
+import javafx.stage.FileChooser;
 import main.Main;
 import main.PageLoader;
 import utility.Message;
 import utility.RequestType;
 import utility.User;
 
-import java.io.DataInputStream;
-import java.io.IOException;
+import java.io.*;
+import java.nio.file.Files;
 import java.time.LocalDate;
 import java.time.Period;
+import java.util.Random;
 
 public class SignupController {
     @FXML
-    TextField username, firstname, lastname;
+    TextField username, firstname, lastname, phoneNumber;
     @FXML
     PasswordField password;
     @FXML
@@ -31,9 +35,16 @@ public class SignupController {
     Pane otherSigninPane;
     @FXML
     RadioButton selectMale, selectFemale;
+    @FXML
+    ImageView image;
 
-    public void signup(ActionEvent actionEvent) throws IOException, InterruptedException {
-        otherSigninPane.setVisible(true);
+
+    /**
+     * Prepare sign up request
+     * @param actionEvent
+     * @throws IOException
+     */
+    public void signup(ActionEvent actionEvent) throws IOException {
         if(checkValid()) {
             User user = new User(firstname.getText(), lastname.getText(),
                     username.getText(), password.getText(), birthday.getEditor().getText());
@@ -47,12 +58,17 @@ public class SignupController {
                 alert.setContentText("Username has been taken");
                 alert.showAndWait();
             }
-            else
+            else {
                 otherSigninPane.setVisible(true);
+                Main.user=user;
+            }
         }
     }
 
-    private boolean checkValid() throws IOException {
+
+
+
+    private boolean checkValid() {
         if(firstname.getText().equals("") || lastname.getText().equals("") || username.getText().equals("")
             || password.getText().equals("") || birthday.getEditor().getText().equals("")) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
@@ -95,6 +111,50 @@ public class SignupController {
         Platform.runLater(()->selectFemale.setSelected(false));
     }
 
+    /**
+     * To choose an image from our files
+     * @param mouseEvent
+     * @throws IOException
+     */
+    public void chooseImage(MouseEvent mouseEvent) throws IOException {
+            FileChooser fileChooser = new FileChooser();
+            File selectedFile = fileChooser.showOpenDialog(Main.stage);
+            if (selectedFile != null) {
+                image.setImage(new Image(selectedFile.toURI().toString()));
+                image.setClip(new Circle(75,75,75));
+            }
+    }
+
+    public void doneSignup(ActionEvent actionEvent) {
+        if (selectFemale.isSelected())
+            Main.user.setSex(false);
+        Main.user.setPhoneNumber(phoneNumber.getText());
+
+    }
 
 
+    /**
+     * Suggests a username
+     * @param actionEvent
+     */
+    public void usernameSuggestion(ActionEvent actionEvent) {
+        String string = "";
+        Random rand = new Random();
+        try {
+            int lengthname = firstname.getText().length();
+            String name = firstname.getText().substring(0 , rand.nextInt(lengthname) + 1);
+            int lengthlastname = lastname.getText().length();
+            String lname = lastname.getText().substring(0 , rand.nextInt(lengthlastname)+1);
+            string = name.toUpperCase();
+            if (rand.nextBoolean())
+                string += ".";
+            string += lname.toLowerCase();
+        } catch (Exception e) {
+        }
+        while (string.length() < 8) {
+            string += rand.nextInt(10);
+        }
+        string += "1";
+        username.setText(string);
+    }
 }

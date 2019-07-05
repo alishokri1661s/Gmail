@@ -9,6 +9,11 @@ public class AllUsers {
     private static final String USERS_FILE_URL = "src/resources/users.ser";
     private static List<User> All_Users;
 
+    /**
+     * Init all users
+     * @throws IOException
+     * @throws ClassNotFoundException
+     */
     public static void init() throws IOException, ClassNotFoundException {
         try {
             ObjectInputStream objectInputStream =
@@ -27,6 +32,11 @@ public class AllUsers {
         return All_Users;
     }
 
+    /**
+     * adds user to All_users list
+     * @param user the user that we want to add
+     * @throws IOException
+     */
     public static void addUser(User user) throws IOException {
         try {
             All_Users.add(user);

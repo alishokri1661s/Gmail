@@ -2,35 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cba7dd2-fe82-46ab-ba72-2ec73ef94eb0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Gmail/src/view/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/images/unknown.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Gmail/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Gmail/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gmail/src/view/unknown.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Gmail/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Gmail/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Gmail/out/production/Gmail/controller/SignupController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Gmail/out/production/Gmail/controller/SignupController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Gmail/out/production/Gmail/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Gmail/out/production/Gmail/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Gmail/out/production/Gmail/main/PageLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Gmail/out/production/Gmail/main/PageLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Gmail/out/production/Gmail/utility/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Gmail/out/production/Gmail/utility/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Gmail/out/production/Gmail/view/signup.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../Gmail/out/production/Gmail/view/signup.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Gmail/src/controller/SignupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Gmail/src/controller/SignupController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Gmail/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Gmail/src/main/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Gmail/src/main/PageLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Gmail/src/main/PageLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Gmail/src/utility/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Gmail/src/utility/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Gmail/src/view/signup.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../Gmail/src/view/signup.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/server/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/server/server/Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/server/ServerHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/server/server/ServerHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/server/ServerRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/server/server/ServerRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/store/tes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/store/users.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/utility/AllUsers.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/server/utility/AllUsers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/utility/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/server/utility/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/ServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/ServerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/tes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/users.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/users.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utility/AllUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/AllUsers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utility/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/User.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,34 +24,15 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/server/Server.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utility/AllUsers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+            <state relative-caret-position="20">
+              <caret line="34" column="7" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#884#885#0" expanded="true" />
+                <element signature="e#916#917#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/utility/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="860">
-              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
             </state>
           </provider>
         </entry>
@@ -77,8 +40,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/server/ServerHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="38" column="52" lean-forward="true" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="52" />
+            <state relative-caret-position="200">
+              <caret line="52" column="7" lean-forward="true" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -106,9 +69,9 @@
         <option value="$PROJECT_DIR$/src/RequestType.java" />
         <option value="$PROJECT_DIR$/src/utility/RequestType.java" />
         <option value="$PROJECT_DIR$/src/store/users.ser" />
-        <option value="$PROJECT_DIR$/src/server/Server.java" />
-        <option value="$PROJECT_DIR$/src/utility/AllUsers.java" />
         <option value="$PROJECT_DIR$/src/utility/User.java" />
+        <option value="$PROJECT_DIR$/src/utility/AllUsers.java" />
+        <option value="$PROJECT_DIR$/src/server/Server.java" />
         <option value="$PROJECT_DIR$/src/server/ServerHandler.java" />
       </list>
     </option>
@@ -165,7 +128,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562355281786" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562360910449" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunDashboard">
@@ -326,10 +289,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/utility/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-480">
+          <caret line="19" column="31" lean-forward="true" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/server/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+        <state relative-caret-position="-600">
+          <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -338,25 +308,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utility/AllUsers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+        <state relative-caret-position="20">
+          <caret line="34" column="7" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#884#885#0" expanded="true" />
+            <element signature="e#916#917#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utility/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="860">
-          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/server/ServerHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="38" column="52" lean-forward="true" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="52" />
+        <state relative-caret-position="200">
+          <caret line="52" column="7" lean-forward="true" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -14,6 +14,10 @@ import java.nio.file.Paths;
 public class PageLoader {
     private static Stage stage;
 
+    /**
+     * init a stage for app
+     * @param primaryStage
+     */
     public static void initStage(Stage primaryStage){
         stage = primaryStage;
         stage.setTitle("Gmail");
@@ -24,6 +28,11 @@ public class PageLoader {
         stage.getIcons().add(new Image(Paths.get("src/view/icon.png").toUri().toString()));
     }
 
+    /**
+     * loads any pages we want
+     * @param url
+     * @throws IOException
+     */
     public void load(String url) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource(url));
         stage.setScene(new Scene(root, Main.WIDTH, Main.HEIGHT));

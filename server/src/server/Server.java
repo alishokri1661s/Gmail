@@ -31,6 +31,7 @@ public class Server implements Runnable {
     public void run() {
         while (!serverSocket.isClosed()) {
             try {
+                //waiting for clients
                 new Thread(new ServerRunner(serverSocket.accept()), "Server Runner").start();
             } catch (IOException e) {
                 // ignore it
@@ -40,6 +41,8 @@ public class Server implements Runnable {
         }
     }
 }
+
+
 
 class ServerRunner implements Runnable {
     private Socket serverSocket;

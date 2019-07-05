@@ -27,6 +27,12 @@ public class ServerHandler {
 
     private static List<User> users = new ArrayList<>();
 
+    /**
+     * Handle the request of client and give back a response
+     * @param message request of client
+     * @throws IOException
+     * @throws ClassNotFoundException
+     */
     void handle(Message message) throws IOException, ClassNotFoundException {
         switch (message.getRequestType()) {
             case login:
@@ -44,6 +50,11 @@ public class ServerHandler {
         }
     }
 
+    /**
+     * To check that username has been taken or not
+     * @param username
+     * @return
+     */
     private String checkUsername(String username) {
         for (User user :AllUsers.getAll_Users()) {
             if(user.getUsername().equalsIgnoreCase(username))
