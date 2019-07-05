@@ -3,10 +3,13 @@ package main;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class PageLoader {
     private static Stage stage;
@@ -16,8 +19,9 @@ public class PageLoader {
         stage.setTitle("Gmail");
         stage.setResizable(false);
         stage.setWidth(Main.WIDTH);
-        stage.setHeight(Main.HEIGHT + 30);
+        stage.setHeight(Main.HEIGHT);
         stage.initStyle(StageStyle.DECORATED);
+        stage.getIcons().add(new Image(Paths.get("src/view/icon.png").toUri().toString()));
     }
 
     public void load(String url) throws IOException {

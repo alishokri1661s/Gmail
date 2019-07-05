@@ -10,7 +10,7 @@ import java.net.Socket;
 public class Main extends Application {
 
     public static int WIDTH = 400;
-    public static int HEIGHT = 600;
+    public static int HEIGHT = 630;
 
     public static Socket socket;
     public static ObjectOutputStream output;

@@ -34,12 +34,21 @@ public class ServerHandler {
                 break;
             case signup:
                 User user = (User) inputStream.readObject();
-                /*FileOutputStream newUser = new FileOutputStream("src/store/users/" +
-                        user.getUsername()+".ser");
-                ObjectOutputStream newObjectUser = new ObjectOutputStream(newUser);
-                newObjectUser.writeObject(user);*/
+                DataOutputStream dataOutputStream = new DataOutputStream(socket.getOutputStream());
+                String response = checkUsername(user.getUsername());
+                dataOutputStream.writeUTF(response);
+                if(response.equals("Username error"))
+                    break;
                 AllUsers.addUser(user);
                 break;
         }
+    }
+
+    private String checkUsername(String username) {
+        for (User user :AllUsers.getAll_Users()) {
+            if(user.getUsername().equalsIgnoreCase(username))
+                return "Username error";
+        }
+        return "Ok";
     }
 }

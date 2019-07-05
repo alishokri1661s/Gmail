@@ -2,7 +2,6 @@ package server;
 
 import utility.AllUsers;
 import utility.Message;
-
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;

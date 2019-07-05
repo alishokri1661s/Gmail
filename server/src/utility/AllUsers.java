@@ -6,13 +6,17 @@ import java.util.List;
 
 public class AllUsers {
 
-    private static final String USERS_FILE_URL = "src/store/users.ser";
+    private static final String USERS_FILE_URL = "src/resources/users.ser";
     private static List<User> All_Users;
 
     public static void init() throws IOException, ClassNotFoundException {
         try {
-            ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(USERS_FILE_URL));
+            ObjectInputStream objectInputStream =
+                    new ObjectInputStream(new FileInputStream(USERS_FILE_URL));
             All_Users = (List<User>) objectInputStream.readObject();
+            for (User user: All_Users) {
+                System.out.println(user.getUsername());
+            }
             objectInputStream.close();
         }catch(Exception e){
             All_Users = new ArrayList<>(); }
@@ -26,7 +30,8 @@ public class AllUsers {
     public static void addUser(User user) throws IOException {
         try {
             All_Users.add(user);
-            ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream(USERS_FILE_URL));
+            ObjectOutputStream objectOutputStream =
+                    new ObjectOutputStream(new FileOutputStream(USERS_FILE_URL));
             objectOutputStream.writeObject(All_Users);
             objectOutputStream.close();
         }catch (Exception e){e.printStackTrace();}
