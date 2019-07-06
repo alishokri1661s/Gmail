@@ -8,15 +8,24 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #EEEEEE;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
    <children>
-      <TextField fx:id="username" layoutX="126.0" layoutY="206.0" promptText="username" />
-      <PasswordField fx:id="password" layoutX="126.0" layoutY="260.0" promptText="password" />
-      <Button layoutX="179.0" layoutY="328.0" mnemonicParsing="false" onAction="#login" text="login" />
-      <Button layoutX="174.0" layoutY="395.0" mnemonicParsing="false" onAction="#signup" prefHeight="25.0" prefWidth="59.0" text="signup" />
+      <TextField fx:id="username" layoutX="124.0" layoutY="197.0" promptText="username" />
+      <PasswordField fx:id="password" layoutX="124.0" layoutY="251.0" promptText="password" />
+      <Button layoutX="177.0" layoutY="353.0" mnemonicParsing="false" onAction="#login" text="login" />
+      <Button layoutX="172.0" layoutY="420.0" mnemonicParsing="false" onAction="#signup" prefHeight="25.0" prefWidth="59.0" text="signup" />
+      <Label layoutX="117.0" layoutY="291.0" onMouseClicked="#forgetPassword" text="Did you forgot the password?" />
       <Pane fx:id="PaneConnect" layoutX="62.0" layoutY="105.0" prefHeight="414.0" prefWidth="276.0" style="-fx-background-color: #EEEEEE;">
          <children>
             <TextField fx:id="IpAddress" layoutX="62.0" layoutY="126.0" promptText="IP Address" />
             <Button layoutX="106.0" layoutY="259.0" mnemonicParsing="false" onAction="#connect" text="connect" />
             <Label fx:id="error" layoutX="84.0" layoutY="169.0" text="Unable to connect" visible="false" />
+         </children>
+      </Pane>
+      <Pane fx:id="forgetPane" layoutX="-1.0" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #eeeeee;" visible="false">
+         <children>
+            <TextField fx:id="forgetUsername" layoutX="124.0" layoutY="174.0" promptText="username" />
+            <TextField fx:id="forgetBestfriend" layoutX="124.0" layoutY="241.0" promptText="who is your best friend?" />
+            <Button layoutX="173.0" layoutY="337.0" mnemonicParsing="false" onAction="#doneForget" text="done" />
+            <Button layoutX="173.0" layoutY="407.0" mnemonicParsing="false" onAction="#backForget" text="back" />
          </children>
       </Pane>
    </children>

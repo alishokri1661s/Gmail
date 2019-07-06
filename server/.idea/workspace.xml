@@ -2,17 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cba7dd2-fe82-46ab-ba72-2ec73ef94eb0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Gmail/src/view/unknown.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Gmail/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Gmail/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Gmail/out/production/Gmail/controller/SignupController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Gmail/out/production/Gmail/controller/SignupController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Gmail/out/production/Gmail/main/PageLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Gmail/out/production/Gmail/main/PageLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Gmail/out/production/Gmail/utility/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Gmail/out/production/Gmail/utility/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Gmail/out/production/Gmail/view/signup.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../Gmail/out/production/Gmail/view/signup.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Gmail/src/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Gmail/src/controller/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Gmail/src/controller/SignupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Gmail/src/controller/SignupController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Gmail/src/main/PageLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Gmail/src/main/PageLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Gmail/src/utility/RequestType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Gmail/src/utility/RequestType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Gmail/src/utility/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Gmail/src/utility/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Gmail/src/view/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../Gmail/src/view/login.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Gmail/src/view/signup.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../Gmail/src/view/signup.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/ServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/ServerHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utility/AllUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/AllUsers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utility/RequestType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/RequestType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utility/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/User.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,8 +31,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utility/AllUsers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="34" column="7" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+            <state relative-caret-position="200">
+              <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#884#885#0" expanded="true" />
@@ -40,11 +45,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/server/ServerHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="52" column="7" lean-forward="true" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
+            <state relative-caret-position="206">
+              <caret line="68" column="32" lean-forward="true" selection-start-line="68" selection-start-column="32" selection-end-line="68" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utility/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="179">
+              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
             </state>
           </provider>
         </entry>
@@ -67,11 +81,11 @@
         <option value="$PROJECT_DIR$/src/utility/Message.java" />
         <option value="$PROJECT_DIR$/src/utility/MessageType.java" />
         <option value="$PROJECT_DIR$/src/RequestType.java" />
-        <option value="$PROJECT_DIR$/src/utility/RequestType.java" />
         <option value="$PROJECT_DIR$/src/store/users.ser" />
-        <option value="$PROJECT_DIR$/src/utility/User.java" />
-        <option value="$PROJECT_DIR$/src/utility/AllUsers.java" />
         <option value="$PROJECT_DIR$/src/server/Server.java" />
+        <option value="$PROJECT_DIR$/src/utility/User.java" />
+        <option value="$PROJECT_DIR$/src/utility/RequestType.java" />
+        <option value="$PROJECT_DIR$/src/utility/AllUsers.java" />
         <option value="$PROJECT_DIR$/src/server/ServerHandler.java" />
       </list>
     </option>
@@ -128,7 +142,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562360932760" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562379554131" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunDashboard">
@@ -174,6 +188,14 @@
       <option name="presentableId" value="Default" />
       <updated>1562079967832</updated>
     </task>
+    <task id="LOCAL-00001" summary="last commit">
+      <created>1562360959459</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1562360959459</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -236,6 +258,20 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
     </layout-to-restore>
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="last commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="last commit" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/ServerHandler.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -265,13 +301,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/utility/RequestType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/io/PrintStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -289,13 +318,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/utility/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-480">
-          <caret line="19" column="31" lean-forward="true" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/server/Server.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-600">
@@ -306,10 +328,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/utility/RequestType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utility/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/utility/AllUsers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="34" column="7" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+        <state relative-caret-position="200">
+          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#884#885#0" expanded="true" />
@@ -320,8 +356,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/server/ServerHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="52" column="7" lean-forward="true" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
+        <state relative-caret-position="206">
+          <caret line="68" column="32" lean-forward="true" selection-start-line="68" selection-start-column="32" selection-end-line="68" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

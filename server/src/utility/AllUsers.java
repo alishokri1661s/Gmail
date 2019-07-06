@@ -20,7 +20,7 @@ public class AllUsers {
                     new ObjectInputStream(new FileInputStream(USERS_FILE_URL));
             All_Users = (List<User>) objectInputStream.readObject();
             for (User user: All_Users) {
-                System.out.println(user.getUsername());
+                System.out.println(user.getUsername()+" : "+user.getPassword());
             }
             objectInputStream.close();
         }catch(Exception e){

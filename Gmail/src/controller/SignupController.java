@@ -17,14 +17,13 @@ import utility.RequestType;
 import utility.User;
 
 import java.io.*;
-import java.nio.file.Files;
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.Random;
 
 public class SignupController {
     @FXML
-    TextField username, firstname, lastname, phoneNumber;
+    TextField username, firstname, lastname, phonenumber, bestfriend;
     @FXML
     PasswordField password;
     @FXML
@@ -48,6 +47,8 @@ public class SignupController {
         if(checkValid()) {
             User user = new User(firstname.getText(), lastname.getText(),
                     username.getText(), password.getText(), birthday.getEditor().getText());
+            if (!bestfriend.getText().equals("") && bestfriend.getText()!=null)
+                user.setBestFriend(bestfriend.getText());
             Message message = new Message(RequestType.signup);
             Main.output.writeObject(message);
             Main.output.writeObject(user);
@@ -61,6 +62,7 @@ public class SignupController {
             else {
                 otherSigninPane.setVisible(true);
                 Main.user=user;
+                dataInputStream.close();
             }
         }
     }
@@ -100,7 +102,7 @@ public class SignupController {
     }
 
     public void back(ActionEvent actionEvent) throws IOException {
-        new PageLoader().load("./login.fxml");
+        new PageLoader().load("../view/login.fxml");
     }
 
     public void femaleClicked(MouseEvent mouseEvent) {
@@ -128,7 +130,7 @@ public class SignupController {
     public void doneSignup(ActionEvent actionEvent) {
         if (selectFemale.isSelected())
             Main.user.setSex(false);
-        Main.user.setPhoneNumber(phoneNumber.getText());
+        Main.user.setPhoneNumber(phonenumber.getText());
 
     }
 

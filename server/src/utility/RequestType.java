@@ -5,5 +5,6 @@ import java.io.Serializable;
 public enum RequestType implements Serializable {
     login,
     signup,
-    message
+    message,
+    forget_password
 }

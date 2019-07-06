@@ -13,6 +13,7 @@ public class User implements Serializable {
     private String birthDay;
     private String imageName="unknown.png";
     private String phoneNumber;
+    private String bestFriend=null;
 
     /** True means male*/
     private boolean sex=true;
@@ -23,6 +24,11 @@ public class User implements Serializable {
         this.firstName = firstName;
         this.lastName = lastName;
         this.birthDay = birthDay;
+    }
+
+    public User (String username, String password){
+        this.username = username;
+        this.password = password;
     }
 
     public String getUsername() { return username; }
@@ -56,4 +62,8 @@ public class User implements Serializable {
     public boolean isMale() { return sex; }
 
     public void setSex(boolean sex) { this.sex = sex; }
+
+    public String getBestFriend() { return bestFriend; }
+
+    public void setBestFriend(String bestFriend) { this.bestFriend = bestFriend; }
 }
